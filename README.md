@@ -7,4 +7,4 @@ This project is created to learn GitHub and AI
 - Learn AI tool
 - Build my first application
 ## Developer
-Creared by me
+Created by me
