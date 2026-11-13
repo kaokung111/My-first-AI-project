@@ -92,7 +92,7 @@
         .section-heading { margin: 0 0 10px; font-size: clamp(1.8rem, 4vw, 2.5rem); }
         .section-heading span { color: var(--accent); }
         .section-intro { max-width: 650px; margin: 0 0 28px; color: var(--muted); }
-        .about-card, .skill-card, .branch-test {
+        .about-card, .skill-card, .project-card, .branch-test {
             border: 1px solid var(--border);
             border-radius: 18px;
             background: linear-gradient(145deg, rgba(20, 36, 58, 0.92), rgba(16, 29, 48, 0.82));
@@ -103,6 +103,11 @@
         .skill-card { padding: 22px; }
         .skill-card h3 { margin: 0 0 8px; color: var(--accent); }
         .skill-card p { margin: 0; color: var(--muted); }
+        .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .project-card { display: flex; flex-direction: column; align-items: flex-start; padding: 22px; }
+        .project-card h3 { margin: 0 0 8px; color: var(--accent); }
+        .project-card p { flex: 1; margin: 0 0 20px; color: var(--muted); }
+        .project-card .button { min-height: 42px; padding: 9px 16px; font-size: 0.92rem; }
         .contact-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
         .contact-row .section-intro { margin-bottom: 0; }
         .branch-test { margin: 64px 0; padding: 28px; text-align: center; }
@@ -135,6 +140,7 @@
             .hero-copy { font-size: 1rem; }
             section.content-section { padding: 48px 0; }
             .skills-grid { grid-template-columns: 1fr; }
+            .projects-grid { grid-template-columns: 1fr; }
             .contact-row { align-items: flex-start; flex-direction: column; }
             .branch-test { margin: 48px 0; padding: 24px 18px; }
         }
@@ -153,6 +159,7 @@
                 <a href="#home">หน้าแรก</a>
                 <a href="#about">เกี่ยวกับฉัน</a>
                 <a href="#skills">ทักษะ</a>
+                <a href="#projects">My Projects</a>
                 <a href="#contact">ติดต่อ</a>
             </div>
         </nav>
@@ -189,6 +196,28 @@
                 <article class="skill-card">
                     <h3>JavaScript</h3>
                     <p>เพิ่มการโต้ตอบเล็ก ๆ เพื่อให้เว็บไซต์ใช้งานสะดวกขึ้น</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section" id="projects" aria-labelledby="projects-title">
+            <h2 class="section-heading" id="projects-title">My <span>Projects</span></h2>
+            <p class="section-intro">ตัวอย่างผลงานที่ฉันกำลังสร้างและเรียนรู้ไปพร้อมกัน</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Personal Portfolio</h3>
+                    <p>เว็บไซต์แนะนำตัวที่รวบรวมข้อมูล ทักษะ และผลงานของฉันไว้ในที่เดียว</p>
+                    <a class="button button-outline" href="#projects" aria-label="View Project: Personal Portfolio">View Project</a>
+                </article>
+                <article class="project-card">
+                    <h3>Task Planner</h3>
+                    <p>แอปจัดการรายการงานแบบง่าย ๆ เพื่อฝึกการสร้างส่วนติดต่อที่โต้ตอบได้</p>
+                    <a class="button button-outline" href="#projects" aria-label="View Project: Task Planner">View Project</a>
+                </article>
+                <article class="project-card">
+                    <h3>Weather Dashboard</h3>
+                    <p>แดชบอร์ดสภาพอากาศตัวอย่างสำหรับฝึกนำเสนอข้อมูลให้เข้าใจง่าย</p>
+                    <a class="button button-outline" href="#projects" aria-label="View Project: Weather Dashboard">View Project</a>
                 </article>
             </div>
         </section>
